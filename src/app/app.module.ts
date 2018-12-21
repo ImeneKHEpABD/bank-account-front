@@ -11,13 +11,15 @@ import { MatButtonModule, MatCardModule, MatInputModule, MatSnackBarModule, MatT
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { OperationsComponent } from './operations/operations.component';
 import { NavigationComponent } from './navigation/navigation.component';
+import { OperationsHistoryComponent } from './operations-history/operations-history.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
     OperationsComponent,
-    NavigationComponent
+    NavigationComponent,
+    OperationsHistoryComponent
   ],
   imports: [
     BrowserModule,
