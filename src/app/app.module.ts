@@ -10,11 +10,13 @@ import {AppRoutingModule} from './app-routing.module'
 import { MatButtonModule, MatCardModule, MatInputModule, MatSnackBarModule, MatToolbarModule } from '@angular/material';
 import { from } from 'rxjs';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { OperationsComponent } from './operations/operations.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    OperationsComponent
   ],
   imports: [
     BrowserModule,
