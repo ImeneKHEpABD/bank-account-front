@@ -3,11 +3,11 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
+    "start": "ng serve --proxy-config proxy.conf.json --base-href /admin/ --deploy-url /admin/ --port=4200",
+    "build": "ng build --prod --base-href /admin/ --deploy-url /admin/ --output-path=../oneprofile-admin/oneprofile-admin/src/main/resources/static ",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "test": "ng test"
   },
   "private": true,
   "dependencies": {
