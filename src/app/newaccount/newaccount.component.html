@@ -1,7 +1,7 @@
 <mat-card>
   <div id="number_field">
 <mat-form-field>
-  <input matInput type="text" placeholder="Name" />
+  <input matInput type="text" placeholder="Name"  />
 </mat-form-field>
 </div>
 <div id="number_field1">
@@ -11,7 +11,9 @@
 </div>
 <div id="number_field2">
 <mat-form-field>
-  <input matInput type="datetime" placeholder="Birthday" />
+  <input matInput [matDatepicker]="picker" placeholder="Birthday" formControlName="birdhday"  />
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  <mat-datepicker #picker></mat-datepicker>
 </mat-form-field>
 </div>
 <div id="number_field3">
@@ -26,7 +28,7 @@
 </div>
 <div id="number_field5">
 <mat-form-field>
-    <input matInput type="text" placeholder="Email" />
+    <input matInput type="email" placeholder="Email" formControlName="email" />
   </mat-form-field>
 </div>
 

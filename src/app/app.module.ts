@@ -14,6 +14,7 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { OperationsHistoryComponent } from './operations-history/operations-history.component';
 import { NewaccountComponent } from './newaccount/newaccount.component';
 
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { NewaccountComponent } from './newaccount/newaccount.component';
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule, ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
