@@ -14,7 +14,8 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { OperationsHistoryComponent } from './operations-history/operations-history.component';
 import { NewaccountComponent } from './newaccount/newaccount.component';
 
-import { FormsModule, ReactiveFormsModule } from '@angular/forms'
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HomeComponent } from './home/home.component'
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms'
     OperationsComponent,
     NavigationComponent,
     OperationsHistoryComponent,
-    NewaccountComponent
+    NewaccountComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

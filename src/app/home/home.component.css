@@ -1,0 +1,13 @@
+#home {
+    display: block;
+    border: 1px solid black;
+    background-color: #eef;
+    font-style: italic;
+    text-align: center;
+  }
+  #home h1
+  {
+    font-style: italic;
+    text-align: center;
+   
+  }

@@ -8,6 +8,10 @@
         </button>
         </mat-toolbar>
         <mat-nav-list>
+            <a mat-list-item class="sidenav-link" routerLink="home" (click)="sidenav.toggle()">
+                        <span mat-line class="title" >Home</span>
+                        <!-- <span mat-line class="secondary"></span> -->
+            </a>
             <a mat-list-item class="sidenav-link" routerLink="newaccount" (click)="sidenav.toggle()">
                         <span mat-line class="title" >New Account</span>
                         <!-- <span mat-line class="secondary"></span> -->
@@ -27,15 +31,16 @@
         <button mat-icon-button (click)="sidenav.toggle()" class="mat-icon-button sidenav-toggle-button" [hidden]="sidenav.opened">
             <mat-icon aria-label="Menu" class="material-icons">menu</mat-icon>
         </button>
-        <button mat-button routerLink="/">
+        <button mat-button routerLink="home">
             <a style="font-family:cursive;font-size:220%;color:rgb(94, 12, 6);">Bank</a>
             <a style="font-family:cursive;font-size:220%;color:rgb(59, 4, 55);">Account</a>
         </button>
 
         <span class="toolbar-filler"></span>
-        <button id="button-home" mat-button routerLink="newaccount">New Account</button>
-        <button id="button-home" mat-button routerLink="operations">Operations</button>
-        <button id="button-admin" mat-button routerLink="operationshistory">Operations History</button>
+        <button id="button-home" mat-button routerLink="home">Home</button>
+        <button id="button-account" mat-button routerLink="newaccount">New Account</button>
+        <button id="button-operations" mat-button routerLink="operations">Operations</button>
+        <button id="button-operationshistory" mat-button routerLink="operationshistory">Operations History</button>
     </mat-toolbar>
     <router-outlet></router-outlet>
 </mat-sidenav-container>
