@@ -1,0 +1,15 @@
+div#button_align1{
+    text-align:center;  
+    margin-left:90px;
+    margin-top:110px;
+    }
+    div#button_align2{
+        text-align:right; 
+        }
+    div#number_field{
+        text-align:center;
+    }
+    div#container{
+        text-align:center;
+  background-color: blue
+}
