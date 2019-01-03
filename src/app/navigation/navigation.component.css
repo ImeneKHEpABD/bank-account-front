@@ -6,6 +6,10 @@
     right: 0;
     background: #eee;
   }
+  .Toolbar
+  {
+    background:brown;
+  }
   .example-button-row button,
 .example-button-row a {
   margin-right: 8px;
