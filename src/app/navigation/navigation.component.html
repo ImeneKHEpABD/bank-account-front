@@ -8,22 +8,15 @@
         </button>
         </mat-toolbar>
         <mat-nav-list>
-            
-            <a mat-list-item class="sidenav-link" routerLink="newaccount" (click)="sidenav.toggle()">
-                        <span mat-line class="title" >New Account</span>
-                        <!-- <span mat-line class="secondary"></span> -->
-            </a>
-            <a mat-list-item class="sidenav-link" routerLink="operations" (click)="sidenav.toggle()">
-                <span mat-line class="title" >Operations</span>
-                <!-- <span mat-line class="secondary"></span> -->
-            </a>
-            <a mat-list-item class="sidenav-link" routerLink="operationshistory" (click)="sidenav.toggle()">
-                    <span mat-line class="title" >Operations History</span>
-                    <!-- <span mat-line class="secondary"></span> -->
-            </a>
             <a mat-list-item class="sidenav-link" routerLink="home" (click)="sidenav.toggle()">
-                    <span mat-line class="title" >Home</span>
+                    <mat-icon mat-list-icon>home</mat-icon>    
+                <span mat-line class="title" >Home</span>
                     <!-- <span mat-line class="secondary"></span> -->
+            </a>
+            <a mat-list-item class="sidenav-link" routerLink="/search" (click)="sidenav.toggle()">
+                <mat-icon mat-list-icon>search</mat-icon>
+                <span mat-line class="title" >Search</span>
+                <!-- <span mat-line class="secondary"></span> -->
             </a>
 
         </mat-nav-list>

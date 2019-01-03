@@ -16,7 +16,8 @@ export class NewaccountComponent implements OnInit {
     this.maxDate = new Date(2019, 0, 1);
     this.form = fb.group({
       email: ['', [Validators.required, Validators.email]],
-      name:['',Validators.requiredTrue]
+      name:['',Validators.requiredTrue],
+      phone:['',Validators.pattern("[0-9]{0-10}")]
     });
   }
 
