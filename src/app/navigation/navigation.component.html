@@ -8,10 +8,7 @@
         </button>
         </mat-toolbar>
         <mat-nav-list>
-            <a mat-list-item class="sidenav-link" routerLink="home" (click)="sidenav.toggle()">
-                        <span mat-line class="title" >Home</span>
-                        <!-- <span mat-line class="secondary"></span> -->
-            </a>
+            
             <a mat-list-item class="sidenav-link" routerLink="newaccount" (click)="sidenav.toggle()">
                         <span mat-line class="title" >New Account</span>
                         <!-- <span mat-line class="secondary"></span> -->
@@ -22,6 +19,10 @@
             </a>
             <a mat-list-item class="sidenav-link" routerLink="operationshistory" (click)="sidenav.toggle()">
                     <span mat-line class="title" >Operations History</span>
+                    <!-- <span mat-line class="secondary"></span> -->
+            </a>
+            <a mat-list-item class="sidenav-link" routerLink="home" (click)="sidenav.toggle()">
+                    <span mat-line class="title" >Home</span>
                     <!-- <span mat-line class="secondary"></span> -->
             </a>
 
@@ -37,10 +38,12 @@
         </button>
 
         <span class="toolbar-filler"></span>
-        <button id="button-home" mat-button routerLink="home">Home</button>
-        <button id="button-account" mat-button routerLink="newaccount">New Account</button>
         <button id="button-operations" mat-button routerLink="operations">Operations</button>
         <button id="button-operationshistory" mat-button routerLink="operationshistory">Operations History</button>
+        <div class="example-button-row">
+                <a mat-mini-fab routerLink="newaccount">+</a>
+              </div>
     </mat-toolbar>
+    
     <router-outlet></router-outlet>
 </mat-sidenav-container>
