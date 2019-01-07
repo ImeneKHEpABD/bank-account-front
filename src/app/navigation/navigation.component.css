@@ -10,7 +10,25 @@
   {
     background:brown;
   }
-  .example-button-row button,
-.example-button-row a {
-  margin-right: 8px;
+.example-button-row button,
+.example-button-row mat-mini-fab
+{
+  color:warn;
+}
+.hometitle a
+{
+  color: #fd0404;
+  font-size:220%;
+  font-family: cursive;
+}
+#button-operations a
+{
+  color: #f70606;
+  font-style: italic;
+  
+}
+#button-operationshistory a
+{
+  color: #f70606;
+  font-style: italic;
 }

@@ -4,10 +4,16 @@
     background-color: #eef;
     font-style: italic;
     text-align: center;
+    font-size: 100;
   }
-  #home h1
+  h1
   {
     font-style: italic;
     text-align: center;
+    font-size: 200%;
+    position: absolute;
+    top: 200px;
+    left: 400px;
+    color:rgb(79, 15, 230)
    
   }

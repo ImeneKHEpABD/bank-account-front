@@ -26,17 +26,21 @@
         <button mat-icon-button (click)="sidenav.toggle()" class="mat-icon-button sidenav-toggle-button" [hidden]="sidenav.opened">
             <mat-icon aria-label="Menu" class="material-icons">menu</mat-icon>
         </button>
+        <div class="hometitle">
         <button mat-button routerLink="home">
-            
-            <a style="font-family:cursive;font-size:220%;color:rgb(147, 182, 184);">Bank</a>
-            <a style="font-family:cursive;font-size:220%;color:rgb(255, 158, 145);">Account</a>
+            <a>Bank</a>
+            <a>Account</a>
         </button>
-
+        </div>
         <span class="toolbar-filler"></span>
-        <button id="button-operations" mat-button routerLink="operations">Operations</button>
-        <button id="button-operationshistory" mat-button routerLink="operationshistory">Operations History</button>
+        <div id="button-operations">
+        <button id="button-operations" mat-button routerLink="operations"><a>Operations</a></button>
+        </div>
+        <div id="button-operationshistory">
+        <button id="button-operationshistory" mat-button routerLink="operationshistory"><a>Operations History</a></button>
+        </div>
         <div class="example-button-row">
-                <a mat-mini-fab  color="warn" routerLink="newaccount">
+                <a mat-mini-fab routerLink="newaccount">
                         <mat-icon mat-list-icon>add</mat-icon>
                 </a>
                 

@@ -1,4 +1,16 @@
-table {
+table 
+{
     width: 100%;
-  }
+    position: absolute;
+    top: 200px;
+}
+th a 
+{
+  color: rgb(226, 43, 43);
+  text-align: right;
+}
+td mat-header-cell
+{
+  font-size: 18;
+}
   
