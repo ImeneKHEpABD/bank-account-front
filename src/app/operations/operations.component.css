@@ -1,6 +1,20 @@
 
  
-    div#container{
-       
-  background-color: blue
+#button_align2
+{
+  position: absolute;
+  left: 150px;
 }
+#button_align1
+{
+  position: absolute;
+
+}
+#message
+{
+  position: absolute;
+  top:220px;
+  left: 5px;
+  color:red;
+}
+

@@ -2,17 +2,22 @@
 <mat-card>
     <div id="number_field">
   <mat-form-field>
-    <input matInput type="number" placeholder="Amount" />
+    <input #amount matInput type="number" placeholder="Amount"/>
   </mat-form-field>
   </div>
   <br />
   <div id="button_align1">
+      <button mat-raised-button color="primary" (click)="onDeposit(amount.value)">Deposit</button>
   </div>
   <div id="button_align2">
-      <button mat-raised-button color="primary">Deposit</button>
-      <button mat-raised-button color="primary">Widhdraw</button>
+     
+      <button mat-raised-button color="primary" (click)="onWidhdraw(amount.value)">Widhdraw</button>
     </div>
   
 </mat-card>
-
+<div id="message">
+<p class="message">
+    {{ message }}
+  </p>
+</div>
 </div>

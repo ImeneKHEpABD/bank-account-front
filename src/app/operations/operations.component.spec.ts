@@ -30,4 +30,15 @@ describe('OperationsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  it('should deposit a positive amount', () => {
+    fixture.componentInstance.onDeposit(-100);
+    expect(fixture.componentInstance.value).toBeGreaterThanOrEqual(0);
+   
+  });
+  it('should Widhdraw a positive amount', () => {
+    fixture.componentInstance.onWidhdraw(-100);
+    expect(fixture.componentInstance.value).toBeGreaterThanOrEqual(0);
+   
+  });
+  
 });

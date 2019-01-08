@@ -31,4 +31,5 @@ describe('NewaccountComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+  
 });
