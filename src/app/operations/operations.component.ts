@@ -12,47 +12,27 @@ export class OperationsComponent implements OnInit {
   ngOnInit() {
   }
   value = 0;
-message: string;
-onDeposit(amount: number)
-{
-  if(amount.toString().trim()=='')
-  {
-    this.value=0;
-    this.message="The amount should not be empty!!";
-  }
-  else
-  {
-    if(amount<0)
-    {
-      this.value=0;
-      this.message="The amount should not be negative!!";
-    }
-    else
-    {
-      this.value=amount;
+  message: string;
+  onDeposit(amount: number) {
+    if (this.isAmountValid(amount)) {
+      this.value += amount;
     }
   }
- 
-}
-onWidhdraw(amount: number)
-{
-  if(amount.toString().trim()=='')
-  {
-    this.value=0;
-    this.message="The amount should not be empty!!";
-  }
-  else
-  {
-    if(amount<0)
-    {
-      this.value=0;
-      this.message="The amount should not be negative!!";
-    }
-    else
-    {
-      this.value=amount;
+  onWithdraw(amount: number) {
+    if (this.isAmountValid(amount)) {
+      this.value -= amount;
     }
   }
- 
-}
+
+  private isAmountValid(amount: number): boolean {
+    if (amount.toString().trim() == '') {
+      this.message = "The amount should not be empty!!";
+      return false;
+    }
+    if (amount < 0) {
+      this.message = "The amount should not be negative!!";
+      return false;
+    }
+    return true;
+  }
 }

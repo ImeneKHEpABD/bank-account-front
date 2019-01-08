@@ -2,7 +2,7 @@
 <mat-card>
     <div id="number_field">
   <mat-form-field>
-    <input #amount matInput type="number" placeholder="Amount"/>
+    <input #amount matInput type="number" placeholder="Amount" min="0" required />
   </mat-form-field>
   </div>
   <br />
@@ -11,7 +11,7 @@
   </div>
   <div id="button_align2">
      
-      <button mat-raised-button color="primary" (click)="onWidhdraw(amount.value)">Widhdraw</button>
+      <button mat-raised-button color="primary" (click)="Onwithdraw(amount.value)">Withdraw</button>
     </div>
   
 </mat-card>
