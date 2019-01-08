@@ -2,15 +2,31 @@ table
 {
     width: 100%;
     position: absolute;
-    top: 200px;
+    top: 100px;
 }
 th a 
 {
   color: rgb(226, 43, 43);
-  text-align: right;
+  text-align: center;
+  
+}
+td,th
+{
+  background-color: rgb(228, 228, 240)
 }
 td mat-header-cell
 {
   font-size: 18;
+  background-color: rgb(228, 228, 240)
+}
+td a
+{
+  text-align: center;
+}
+#paginator
+{
+  position:absolute;
+  top :400px;
+  right:50px;
 }
   
