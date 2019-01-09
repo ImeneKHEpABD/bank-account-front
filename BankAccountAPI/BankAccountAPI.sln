@@ -3,21 +3,23 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2016
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount.Web.API", "BankAccount.Web.API\BankAccount.Web.API.csproj", "{F5C4FBB6-A585-4EF1-8675-57B133EB66EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAccount.Web.API", "BankAccount.Web.API\BankAccount.Web.API.csproj", "{F5C4FBB6-A585-4EF1-8675-57B133EB66EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccountAPI.Commons", "BankAccountAPI.Commons\BankAccountAPI.Commons.csproj", "{523DE3E5-8836-4531-AFEE-5DAC12E5490B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAccountAPI.Commons", "BankAccountAPI.Commons\BankAccountAPI.Commons.csproj", "{523DE3E5-8836-4531-AFEE-5DAC12E5490B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccountAPI.Interfaces", "BankAccountAPI.Interfaces\BankAccountAPI.Interfaces.csproj", "{04E61B38-3C81-4056-9A47-DEB7A0908C09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAccountAPI.Interfaces", "BankAccountAPI.Interfaces\BankAccountAPI.Interfaces.csproj", "{04E61B38-3C81-4056-9A47-DEB7A0908C09}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccountAPI.Maps", "BankAccountAPI.Maps\BankAccountAPI.Maps.csproj", "{CB329D04-2C3A-4928-9F1B-FA822ADCBEF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAccountAPI.Maps", "BankAccountAPI.Maps\BankAccountAPI.Maps.csproj", "{CB329D04-2C3A-4928-9F1B-FA822ADCBEF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccountAPI.Models", "BankAccountAPI.Models\BankAccountAPI.Models.csproj", "{7F0F98C5-A32C-41DE-A1CB-5264F70D1910}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAccountAPI.Models", "BankAccountAPI.Models\BankAccountAPI.Models.csproj", "{7F0F98C5-A32C-41DE-A1CB-5264F70D1910}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccountAPI.Repositories", "BankAccountAPI.Repositories\BankAccountAPI.Repositories.csproj", "{BC00662B-B3AC-4FC9-89E9-F03F5A1652EB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAccountAPI.Repositories", "BankAccountAPI.Repositories\BankAccountAPI.Repositories.csproj", "{BC00662B-B3AC-4FC9-89E9-F03F5A1652EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccountAPI.Services", "BankAccountAPI.Services\BankAccountAPI.Services.csproj", "{D795F693-6BBA-4971-A729-A65DB06F425E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAccountAPI.Services", "BankAccountAPI.Services\BankAccountAPI.Services.csproj", "{D795F693-6BBA-4971-A729-A65DB06F425E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccountAPI.ViewModels", "BankAccountAPI.ViewModels\BankAccountAPI.ViewModels.csproj", "{427643FF-D4FE-410B-8CF9-8007FCD7C7EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankAccountAPI.ViewModels", "BankAccountAPI.ViewModels\BankAccountAPI.ViewModels.csproj", "{427643FF-D4FE-410B-8CF9-8007FCD7C7EF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankAccount.Specs", "BankAccount.Specs\BankAccount.Specs.csproj", "{72BB3759-1883-4B40-B920-3DEBDE2AECA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{427643FF-D4FE-410B-8CF9-8007FCD7C7EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{427643FF-D4FE-410B-8CF9-8007FCD7C7EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{427643FF-D4FE-410B-8CF9-8007FCD7C7EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72BB3759-1883-4B40-B920-3DEBDE2AECA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72BB3759-1883-4B40-B920-3DEBDE2AECA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72BB3759-1883-4B40-B920-3DEBDE2AECA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72BB3759-1883-4B40-B920-3DEBDE2AECA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

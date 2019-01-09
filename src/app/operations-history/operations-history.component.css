@@ -12,12 +12,12 @@ th a
 }
 td,th
 {
-  background-color: rgb(228, 228, 240)
+  background-color: rgb(222, 233, 247)
 }
-td mat-header-cell
+.mat-header-cell
 {
   font-size: 18;
-  background-color: rgb(228, 228, 240)
+  background-color: rgb(222, 233, 247)
 }
 td a
 {
@@ -28,5 +28,8 @@ td a
   position:absolute;
   top :400px;
   right:50px;
+}
+.cdk-overlay-container {
+  color:rgb(118, 143, 173);
 }
   

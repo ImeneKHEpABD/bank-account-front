@@ -1,0 +1,3 @@
+C:\Users\imene\bank-account-front\BankAccountAPI\BankAccount.Specs\obj\Debug\BankAccount.Specs.csprojAssemblyReference.cache
+C:\Users\imene\bank-account-front\BankAccountAPI\BankAccount.Specs\obj\Debug\BankAccount.Specs.dll.config
+C:\Users\imene\bank-account-front\BankAccountAPI\BankAccount.Specs\obj\Debug\BankAccount.Specs.csproj.CoreCompileInputs.cache
