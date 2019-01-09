@@ -7,7 +7,7 @@ const httpOptions = {
 };
 
 @Injectable()
-export class Operations {
+export class Operationsservice {
     value = 0;
     private url = '/api/unsecure/operations';
     constructor(private http: HttpClient) { }
