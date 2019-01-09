@@ -1,8 +1,8 @@
-﻿using System;
+using System;
 
 namespace BankAccountAPI.Services
 {
-    public class Class1
+    public class BankClient
     {
     }
 }

@@ -687,11 +687,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\imene\\source\\repos\\BankAccountAPI\\BankAccountAPI.Models\\BankAccountAPI.Models.csproj",
+      "projectUniqueName": "C:\\Users\\imene\\bank-account-front\\BankAccountAPI\\BankAccountAPI.Models\\BankAccountAPI.Models.csproj",
       "projectName": "BankAccountAPI.Models",
-      "projectPath": "C:\\Users\\imene\\source\\repos\\BankAccountAPI\\BankAccountAPI.Models\\BankAccountAPI.Models.csproj",
+      "projectPath": "C:\\Users\\imene\\bank-account-front\\BankAccountAPI\\BankAccountAPI.Models\\BankAccountAPI.Models.csproj",
       "packagesPath": "C:\\Users\\imene\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\imene\\source\\repos\\BankAccountAPI\\BankAccountAPI.Models\\obj\\",
+      "outputPath": "C:\\Users\\imene\\bank-account-front\\BankAccountAPI\\BankAccountAPI.Models\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
