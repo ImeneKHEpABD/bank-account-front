@@ -16,6 +16,7 @@ import { NewaccountComponent } from './newaccount/newaccount.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component'
+import { Operationsservice } from './operations/operationsservice.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,7 @@ import { HomeComponent } from './home/home.component'
     MaterialModule,
     FormsModule, ReactiveFormsModule
   ],
-  providers: [],
+  providers: [Operationsservice],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
