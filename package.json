@@ -25,6 +25,7 @@
     "guid-typescript": "^1.0.9",
     "rxjs": "~6.3.3",
     "tslib": "^1.9.0",
+    "validator.ts": "^0.2.2",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {
