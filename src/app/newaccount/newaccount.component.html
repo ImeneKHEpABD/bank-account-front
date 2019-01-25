@@ -1,5 +1,5 @@
 <mat-card>
-  <form #myForm="ngForm" [formGroup]="form">
+  <form #myForm="ngForm" [formGroup]="form" (ngSubmit)="newAccount()">
     <div id="number_field">
       <mat-form-field>
         <input matInput type="text" placeholder="Name" required />
