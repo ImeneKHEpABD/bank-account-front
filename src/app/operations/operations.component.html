@@ -1,23 +1,23 @@
 <div id="container">
-<mat-card>
+  <mat-card>
     <div id="number_field">
-  <mat-form-field>
-    <input #amount matInput type="number" placeholder="Amount" min="0" required />
-  </mat-form-field>
-  </div>
-  <br />
-  <div id="button_align1">
-      <button mat-raised-button color="primary" (click)="onDeposit(amount.value)">Deposit</button>
-  </div>
-  <div id="button_align2">
-     
-      <button mat-raised-button color="primary" (click)="Onwithdraw(amount.value)">Withdraw</button>
+      <mat-form-field>
+        <input [(ngModel)]="amount" matInput type="number" placeholder="Amount" value=0 min="0" required />
+      </mat-form-field>
     </div>
-  
-</mat-card>
-<div id="message">
-<p class="message">
-    {{ message }}
-  </p>
-</div>
+    <br />
+    <div id="button_align1"> 
+      <button mat-raised-button color="primary" (click)="onDeposit()">Deposit</button>
+    </div>
+    <div id="button_align2">
+
+      <button mat-raised-button color="primary" (click)="Onwithdraw()">Withdraw</button>
+    </div>
+
+  </mat-card>
+  <div id="message">
+    <p class="message">
+      {{ message }}
+    </p>
+  </div>
 </div>

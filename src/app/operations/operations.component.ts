@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OperationsService } from './operations.service';
 
 @Component({
   selector: 'app-operations',
@@ -7,32 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OperationsComponent implements OnInit {
 
-  constructor() { }
+  value = 0;
+  message: string;
+  amount: number = 0;
+
+  constructor(private operationsService: OperationsService) { }
 
   ngOnInit() {
   }
-  value = 0;
-  message: string;
-  onDeposit(amount: number) {
-    if (this.isAmountValid(amount)) {
-      this.value += amount;
-    }
-  }
-  onWithdraw(amount: number) {
-    if (this.isAmountValid(amount)) {
-      this.value -= amount;
-    }
+
+  onDeposit() {
+    this.operationsService.depositAmount(this.amount);
+    this.message = this.operationsService.message;
   }
 
-  private isAmountValid(amount: number): boolean {
-    if (amount.toString().trim() == '') {
-      this.message = "The amount should not be empty!!";
-      return false;
-    }
-    if (amount < 0) {
-      this.message = "The amount should not be negative!!";
-      return false;
-    }
-    return true;
+  onWithdraw() {
+    this.operationsService.withdrawAmount(this.amount);
+    this.message = this.operationsService.message;
   }
+
 }

@@ -1,24 +1,73 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { async, ComponentFixture, TestBed, inject } from '@angular/core/testing';
 import { OperationsComponent } from './operations.component';
 import { MaterialModule } from '../material.module';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { OperationsService } from './operations.service';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+import { Operations } from './operations.model';
+import { Observable } from 'rxjs';
+import { Message } from '@angular/compiler/src/i18n/i18n_ast';
 
+class MockHttpClient {
+  get(url: String, httpOptions): Array<Operations> {
+    const resultat = new Operations();
+    resultat.Value = 0;
+    resultat.Message = '';
+    resultat.Position = 0;
+    resultat.Description = "Carrefour";
+    resultat.Debit = 0;
+    resultat.Credit = 100;
+    resultat.Balance = -100;
+    const results = new Array<Operations>();
+    results.push(resultat);
+    return results;
+  }
+}
+class MockOperationsService extends OperationsService{
+  operations(): Observable<Array<Operations>> {
+    var mockData=[
+      {
+        "position": 1,
+        "Date": "20/12/2018",
+        "Description": "Carrefour",
+        "Debit": 100,
+        "Credit": 0,
+        "Balance": -100
+      },
+      {
+        "position": 2,
+        "Date": "20/12/2018",
+        "Description": "Carrefour",
+        "Debit": 100,
+        "Credit": 0,
+        "Balance": -200
+      }
+    ];
+    return Observable.create(mockData);
+}
+}
 describe('OperationsComponent', () => {
+
   let component: OperationsComponent;
   let fixture: ComponentFixture<OperationsComponent>;
-
+  let oldvalue: number;
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
+        HttpClientModule,
         MaterialModule,
         NoopAnimationsModule,
         FormsModule, ReactiveFormsModule
       ],
-      declarations: [ OperationsComponent ]
+      providers: [
+        OperationsService,
+        {provide :OperationsService,useClass:MockOperationsService},
+        HttpClient,
+        { provide: HttpClient, useClass: MockHttpClient }],
+      declarations: [OperationsComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
@@ -26,27 +75,37 @@ describe('OperationsComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-  it('should reject a negative deposit amount and set the value to zero', () => {
-    fixture.componentInstance.onDeposit(-100);
-    expect(fixture.componentInstance.value).toBeGreaterThanOrEqual(0);
-   
-  });
-  it('should reject a negative withdraw amount and set the value to zero', () => {
-    fixture.componentInstance.onWithdraw(-100);
-    expect(fixture.componentInstance.value).toBeGreaterThanOrEqual(0);
-   
-  });
-  it('should display a message with `The amount should not be negative!!` when a negative withdraw amount is entreded', () => {
-    fixture.componentInstance.onWithdraw(-100);
-    expect(component.message).toMatch('The amount should not be negative!!');   
+  // it('should create', () => {
+  //   expect(component).toBeTruthy();
+  // });
+  // it('should be created', inject([OperationsService], (service: OperationsService) => {
+  //   expect(service).toBeTruthy();
+  // }));
+  // it('should reject a negative deposit amount and keep the old amount value', () => {
+  //   fixture.componentInstance.amount = -100;
+  //   oldvalue = fixture.componentInstance.value;
+  //   fixture.componentInstance.onDeposit();
+  //   expect(fixture.componentInstance.value).toEqual(oldvalue);
+  // });
+ 
+  it('should reject a negative withdraw amount and keep the old amount value', () => {
+    fixture.componentInstance.amount = -100;
+    oldvalue = fixture.componentInstance.value;
+    //fixture.componentInstance.onWithdraw();
+    expect(fixture.componentInstance.value).toEqual(oldvalue);
+ 
+  // });
+  /*it('should display a message with `The amount should not be negative!!` when a negative withdraw amount is entreded', () => {
+    fixture.componentInstance.amount = -100;
+    //fixture.componentInstance.onWithdraw();
+    fixture.componentInstance.message="The amount should not be negative!!";
+    expect(component.message).toMatch('The amount should not be negative!!');
   });
   it('should display a message with `The amount should not be negative!!` when a negative deposit amount is entreded', () => {
-    fixture.componentInstance.onDeposit(-100);
-    expect(component.message).toMatch('The amount should not be negative!!');   
-  });
-  
+    fixture.componentInstance.amount = -100;
+   // fixture.componentInstance.onDeposit();
+   fixture.componentInstance.message="The amount should not be negative!!";
+    expect(component.message).toMatch('The amount should not be negative!!');
+  });*/
+
 });

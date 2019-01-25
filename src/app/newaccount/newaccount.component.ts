@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, Validators } from '@angular/forms';
+
 @Component({
   selector: 'app-newaccount',
   templateUrl: './newaccount.component.html',
@@ -11,13 +12,15 @@ export class NewaccountComponent implements OnInit {
   minDate: Date;
   maxDate: Date;
   form;
+
   constructor(private fb: FormBuilder) {
+
     this.minDate = new Date(1950, 0, 1);
     this.maxDate = new Date(2019, 0, 1);
     this.form = fb.group({
       email: ['', [Validators.required, Validators.email]],
-      name:['',Validators.requiredTrue],
-      phone:['',Validators.pattern("[0-9]{0-10}")]
+      name: ['', Validators.requiredTrue],
+      phone: ['', Validators.pattern("[0-9]{0-10}")]
     });
   }
 

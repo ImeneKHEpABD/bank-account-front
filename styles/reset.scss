@@ -61,6 +61,8 @@ tbody,
 tfoot,
 thead,
 tr,
+td,
+th,
 article,
 aside,
 canvas,
@@ -125,20 +127,8 @@ q:after {
   content: none;
 }
 
-table {
-  width: 50%;
-  text-align: center;
-  margin: 10;
-  border: medium solid  rgb(118, 143, 173);
 
-}
-td, th
-{
-  border: thin  rgb(118, 143, 173);
-  width: 10%;
-  font-size: 12;
-  text-align: center;
-}
+
 html,
 body 
 {

@@ -8,3 +8,15 @@
   position: absolute;
 
 }
+
+.mat-datepicker {
+    background-color: limegreen;
+    border-radius: 32px;
+    color: black;
+  }
+  .mat-datepicker-toggle.mat-datepicker
+  {
+    background-color: limegreen;
+    border-radius: 32px;
+    color: black;
+  }

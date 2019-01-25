@@ -14,8 +14,8 @@ class RouterOutletStubComponent { }
 describe('NavigationComponent', () => {
   let component: NavigationComponent;
   let fixture: ComponentFixture<NavigationComponent>;
-  let router:Router;
-  let location:Location;
+  let router: Router;
+  let location: Location;
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       imports: [
@@ -56,5 +56,5 @@ describe('NavigationComponent', () => {
     expect(component).toBeTruthy();
   });
 
- 
+
 });

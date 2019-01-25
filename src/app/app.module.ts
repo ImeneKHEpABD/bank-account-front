@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from './material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { AppRoutingModule} from './app-routing.module'
+import { AppRoutingModule } from './app-routing.module'
 import { MatButtonModule, MatCardModule, MatInputModule, MatSnackBarModule, MatToolbarModule } from '@angular/material';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { OperationsComponent } from './operations/operations.component';
@@ -16,7 +16,9 @@ import { NewaccountComponent } from './newaccount/newaccount.component';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component'
-import { Operationsservice } from './operations/operationsservice.service';
+import { OperationsService } from './operations/operations.service';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,9 +34,10 @@ import { Operationsservice } from './operations/operationsservice.service';
     BrowserAnimationsModule,
     AppRoutingModule,
     MaterialModule,
+    HttpClientModule,
     FormsModule, ReactiveFormsModule
   ],
-  providers: [Operationsservice],
+  providers: [OperationsService,HttpClient],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
