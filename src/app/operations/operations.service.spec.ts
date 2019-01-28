@@ -60,10 +60,14 @@ describe('OperationsService', () => {
     expect(service.value).toEqual(oldvalue);
 
   }));
-  /*
- it('should display a message with `The amount should not be negative!!` when a negative withdraw amount is entreded', () => {
  
- });
+ it('should display a message with `The amount should not be negative!!` when a negative withdraw amount is entreded', inject([OperationsService], (service: OperationsService) => {
+  amount = -100;
+  oldvalue = service.value;
+  service.withdrawAmount(amount);
+  expect(service.message).toMatch('The amount should not be negative!!');
+ }));
+  /*
  it('should display a message with `The amount should not be negative!!` when a negative deposit amount is entreded', () => {
  
  });
