@@ -24,9 +24,9 @@ class MockHttpClient {
     return results;
   }
 }
-class MockOperationsService extends OperationsService{
+class MockOperationsService extends OperationsService {
   operations(): Observable<Array<Operations>> {
-    var mockData=[
+    var mockData = [
       {
         "position": 1,
         "Date": "20/12/2018",
@@ -45,7 +45,7 @@ class MockOperationsService extends OperationsService{
       }
     ];
     return Observable.create(mockData);
-}
+  }
 }
 describe('OperationsComponent', () => {
 
@@ -62,7 +62,7 @@ describe('OperationsComponent', () => {
       ],
       providers: [
         OperationsService,
-        {provide :OperationsService,useClass:MockOperationsService},
+        { provide: OperationsService, useClass: MockOperationsService },
         HttpClient,
         { provide: HttpClient, useClass: MockHttpClient }],
       declarations: [OperationsComponent]
@@ -75,9 +75,9 @@ describe('OperationsComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-   it('should create', () => {
-     expect(component).toBeTruthy();
-   });
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
   // it('should be created', inject([OperationsService], (service: OperationsService) => {
   //   expect(service).toBeTruthy();
   // }));
@@ -87,25 +87,24 @@ describe('OperationsComponent', () => {
   //   fixture.componentInstance.onDeposit();
   //   expect(fixture.componentInstance.value).toEqual(oldvalue);
   // });
- 
+
   it('should reject a negative withdraw amount and keep the old amount value', () => {
     fixture.componentInstance.amount = -100;
     oldvalue = fixture.componentInstance.value;
     fixture.componentInstance.onWithdraw();
     expect(fixture.componentInstance.value).toEqual(oldvalue);
-   });
-   
+  });
+
   it('should display a message with `The amount should not be negative!!` when a negative withdraw amount is entreded', () => {
     fixture.componentInstance.amount = -100;
     fixture.componentInstance.onWithdraw();
     expect(component.message).toMatch('The amount should not be negative!!');
   });
-  /*
+
   it('should display a message with `The amount should not be negative!!` when a negative deposit amount is entreded', () => {
     fixture.componentInstance.amount = -100;
-   // fixture.componentInstance.onDeposit();
-   fixture.componentInstance.message="The amount should not be negative!!";
+    fixture.componentInstance.onDeposit();
     expect(component.message).toMatch('The amount should not be negative!!');
-  });*/
+  });
 
 });
