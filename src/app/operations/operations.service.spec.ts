@@ -27,7 +27,7 @@ class MockHttpClient {
 
 let oldvalue: number;
 let amount: number;
-
+let result: boolean;
 describe('OperationsService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -74,18 +74,22 @@ describe('OperationsService', () => {
     service.depositAmount(amount);
     expect(service.message).toMatch('The amount should not be negative!!');
   }));
+
+  it('should return false when the amount is negative', inject([OperationsService], (service: OperationsService) => {
+    amount = -100;
+    oldvalue = service.value;
+    result = service.isAmountValid(amount);
+    expect(result).toEqual(false);
+  }));
   /*
-  it('should return false when the deposit amount is negative', () => {
-  
-  });
-  it('should return true when the deposit amount is positive', () => {
-  
-  });
-  it('should return false when the withdraw amount is negative', () => {
-  
-  });
-  it('should return true when the withdraw amount is positive', () => {
-  
-  });*/
+ it('should return true when the deposit amount is positive', () => {
+ 
+ });
+ it('should return false when the withdraw amount is negative', () => {
+ 
+ });
+ it('should return true when the withdraw amount is positive', () => {
+ 
+ });*/
 
 });
