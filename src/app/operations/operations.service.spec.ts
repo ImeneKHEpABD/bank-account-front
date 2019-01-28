@@ -6,7 +6,7 @@ import { Operations } from "./operations.model";
 import { Observable, of } from 'rxjs';
 
 class MockHttpClient {
-  
+
   get(url: String, httpOptions): Array<Operations> {
     const resultat = new Operations();
     resultat.Value = 0;
@@ -49,31 +49,35 @@ describe('OperationsService', () => {
   it('should reject a negative deposit amount and keep the old amount value', inject([OperationsService], (service: OperationsService) => {
     amount = -100;
     oldvalue = service.value;
-    service.withdrawAmount(amount);
+    service.depositAmount(amount);
     expect(service.value).toEqual(oldvalue);
   }));
-  /*
-  it('should reject a negative withdraw amount and keep the old amount value', () => {
-   
 
-  });
-  it('should display a message with `The amount should not be negative!!` when a negative withdraw amount is entreded', () => {
-  
-  });
-  it('should display a message with `The amount should not be negative!!` when a negative deposit amount is entreded', () => {
-  
-  });
-  it('should return false when the deposit amount is negative', () => {
-  
-  });
-  it('should return true when the deposit amount is positive', () => {
-  
-  });
-  it('should return false when the withdraw amount is negative', () => {
-  
-  });
-  it('should return true when the withdraw amount is positive', () => {
-  
-  });*/
+  it('should reject a negative withdraw amount and keep the old amount value', inject([OperationsService], (service: OperationsService) => {
+    amount = -100;
+    oldvalue = service.value;
+    service.withdrawAmount(amount);
+    expect(service.value).toEqual(oldvalue);
+
+  }));
+  /*
+ it('should display a message with `The amount should not be negative!!` when a negative withdraw amount is entreded', () => {
+ 
+ });
+ it('should display a message with `The amount should not be negative!!` when a negative deposit amount is entreded', () => {
+ 
+ });
+ it('should return false when the deposit amount is negative', () => {
+ 
+ });
+ it('should return true when the deposit amount is positive', () => {
+ 
+ });
+ it('should return false when the withdraw amount is negative', () => {
+ 
+ });
+ it('should return true when the withdraw amount is positive', () => {
+ 
+ });*/
 
 });
