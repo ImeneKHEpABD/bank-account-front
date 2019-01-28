@@ -81,15 +81,11 @@ describe('OperationsService', () => {
     result = service.isAmountValid(amount);
     expect(result).toEqual(false);
   }));
-  /*
- it('should return true when the deposit amount is positive', () => {
- 
- });
- it('should return false when the withdraw amount is negative', () => {
- 
- });
- it('should return true when the withdraw amount is positive', () => {
- 
- });*/
 
+  it('should return true when the amount is positive', inject([OperationsService], (service: OperationsService) => {
+    amount = 100;
+    oldvalue = service.value;
+    result = service.isAmountValid(amount);
+    expect(result).toEqual(true);
+  }));
 });
