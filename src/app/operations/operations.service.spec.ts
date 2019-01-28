@@ -25,6 +25,9 @@ class MockHttpClient {
   }
 }
 
+let oldvalue: number;
+let amount: number;
+
 describe('OperationsService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
@@ -39,12 +42,17 @@ describe('OperationsService', () => {
     });
   });
 
-  /*it('should be created', inject([OperationsService], (service: OperationsService) => {
+  it('should be created', inject([OperationsService], (service: OperationsService) => {
     expect(service).toBeTruthy();
-  }));*/
-  /*it('should reject a negative deposit amount and keep the old amount value'', () => {
-    
-  });
+  }));
+
+  it('should reject a negative deposit amount and keep the old amount value', inject([OperationsService], (service: OperationsService) => {
+    amount = -100;
+    oldvalue = service.value;
+    service.withdrawAmount(amount);
+    expect(service.value).toEqual(oldvalue);
+  }));
+  /*
   it('should reject a negative withdraw amount and keep the old amount value', () => {
    
 

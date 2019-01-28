@@ -89,12 +89,10 @@ describe('OperationsComponent', () => {
   // });
  
   it('should reject a negative withdraw amount and keep the old amount value', () => {
-    //fixture.componentInstance.amount = -100;
-    //oldvalue = fixture.componentInstance.value;
-    //fixture.componentInstance.onWithdraw();
-    //expect(fixture.componentInstance.value).toEqual(oldvalue);
-    expect(0).toEqual(0);
- 
+    fixture.componentInstance.amount = -100;
+    oldvalue = fixture.componentInstance.value;
+    fixture.componentInstance.onWithdraw();
+    expect(fixture.componentInstance.value).toEqual(oldvalue);
    });
   /*it('should display a message with `The amount should not be negative!!` when a negative withdraw amount is entreded', () => {
     fixture.componentInstance.amount = -100;
