@@ -20,7 +20,7 @@ export class NewaccountComponent implements OnInit {
     this.form = fb.group({
       email: ['', [Validators.required, Validators.email]],
       name: ['', Validators.requiredTrue],
-      phone: ['', Validators.pattern("[0-9]{0-10}")]
+      phone: ['', [Validators.required, Validators.pattern("[0-9]{0-10}"), Validators.minLength(6)]]
     });
   }
 
