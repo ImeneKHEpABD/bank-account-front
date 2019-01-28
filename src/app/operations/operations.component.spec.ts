@@ -94,12 +94,13 @@ describe('OperationsComponent', () => {
     fixture.componentInstance.onWithdraw();
     expect(fixture.componentInstance.value).toEqual(oldvalue);
    });
-  /*it('should display a message with `The amount should not be negative!!` when a negative withdraw amount is entreded', () => {
+   
+  it('should display a message with `The amount should not be negative!!` when a negative withdraw amount is entreded', () => {
     fixture.componentInstance.amount = -100;
-    //fixture.componentInstance.onWithdraw();
-    fixture.componentInstance.message="The amount should not be negative!!";
+    fixture.componentInstance.onWithdraw();
     expect(component.message).toMatch('The amount should not be negative!!');
   });
+  /*
   it('should display a message with `The amount should not be negative!!` when a negative deposit amount is entreded', () => {
     fixture.componentInstance.amount = -100;
    // fixture.componentInstance.onDeposit();

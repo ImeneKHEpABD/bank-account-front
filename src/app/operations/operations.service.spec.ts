@@ -28,6 +28,7 @@ class MockHttpClient {
 let oldvalue: number;
 let amount: number;
 let result: boolean;
+
 describe('OperationsService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
