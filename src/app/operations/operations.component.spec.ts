@@ -81,12 +81,13 @@ describe('OperationsComponent', () => {
   // it('should be created', inject([OperationsService], (service: OperationsService) => {
   //   expect(service).toBeTruthy();
   // }));
-  // it('should reject a negative deposit amount and keep the old amount value', () => {
-  //   fixture.componentInstance.amount = -100;
-  //   oldvalue = fixture.componentInstance.value;
-  //   fixture.componentInstance.onDeposit();
-  //   expect(fixture.componentInstance.value).toEqual(oldvalue);
-  // });
+
+  it('should reject a negative deposit amount and keep the old amount value', () => {
+    fixture.componentInstance.amount = -100;
+    oldvalue = fixture.componentInstance.value;
+    fixture.componentInstance.onDeposit();
+    expect(fixture.componentInstance.value).toEqual(oldvalue);
+  });
 
   it('should reject a negative withdraw amount and keep the old amount value', () => {
     fixture.componentInstance.amount = -100;
