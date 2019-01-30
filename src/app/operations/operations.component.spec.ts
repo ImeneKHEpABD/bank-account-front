@@ -78,9 +78,6 @@ describe('OperationsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
-  // it('should be created', inject([OperationsService], (service: OperationsService) => {
-  //   expect(service).toBeTruthy();
-  // }));
 
   it('should reject a negative deposit amount and keep the old amount value', () => {
     fixture.componentInstance.amount = -100;
