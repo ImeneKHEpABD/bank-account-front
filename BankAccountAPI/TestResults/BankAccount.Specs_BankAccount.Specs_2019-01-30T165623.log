@@ -1,0 +1,39 @@
+﻿2019-01-30T16:56:23.6620144+01:00:2019-01-30T16:56:22.6633977+01:00;VSTestExecutionThread;Info;SpecFlow+Runner execution started
+2019-01-30T16:56:23.6640099+01:00:2019-01-30T16:56:22.6703799+01:00;VSTestExecutionThread;Info;SpecFlow+Runner 3.0.21 in Framework clr40 in x86 mode execution started
+2019-01-30T16:56:23.6640099+01:00:2019-01-30T16:56:22.6703799+01:00;VSTestExecutionThread;Info;TestAdapter Location: C:\Users\imene\bank-account-front\BankAccountAPI\BankAccount.Specs\bin\Debug\TechTalk.SpecRun.VisualStudio.TestAdapter.dll
+2019-01-30T16:56:23.6640099+01:00:2019-01-30T16:56:23.6450909+01:00;VSTestExecutionThread;Info;SpecFlow+Runner Evaluation Mode: Please purchase at http://www.specflow.org/plus to remove test execution delay.
+2019-01-30T16:56:23.6640099+01:00:2019-01-30T16:56:23.6450909+01:00;VSTestExecutionThread;Info;SpecRun: running tests in C:\Users\imene\bank-account-front\BankAccountAPI\BankAccount.Specs\bin\Debug\BankAccount.Specs.dll
+2019-01-30T16:56:23.6640099+01:00:2019-01-30T16:56:23.6450909+01:00;VSTestExecutionThread;Info;Profile: BankAccount.Specs
+2019-01-30T16:56:37.7603464+01:00:2019-01-30T16:56:37.7603464+01:00;Thread#18;Info;starting test run
+2019-01-30T16:56:37.7743055+01:00:2019-01-30T16:56:37.7732575+01:00;Thread#18;Info;Discovering target: Default
+2019-01-30T16:56:37.7743055+01:00:2019-01-30T16:56:37.7743055+01:00;Thread#18;Info;Discovering tests from assembly: C:\Users\imene\bank-account-front\BankAccountAPI\BankAccount.Specs\bin\Debug\BankAccount.Specs.dll
+2019-01-30T16:56:38.4560565+01:00:Appdomain Disposed
+2019-01-30T16:56:38.4560565+01:00:2019-01-30T16:56:38.4560565+01:00;Thread#18;Info;Discovered tests from assembly: C:\Users\imene\bank-account-front\BankAccountAPI\BankAccount.Specs\bin\Debug\BankAccount.Specs.dll
+2019-01-30T16:56:38.4570540+01:00:Test Suite Dump
+2019-01-30T16:56:38.4580505+01:00:#0: BankAccount.Specs/BankAccount.Specs - 
+2019-01-30T16:56:38.4580505+01:00:End: Test Suite Dump
+2019-01-30T16:56:38.4760022+01:00:Thread#0:Scheduler: get next test for thread 0
+2019-01-30T16:56:38.4779970+01:00:Thread#:Scheduler: at the end of normal test queue
+2019-01-30T16:56:38.4779970+01:00:Thread#0:Scheduler: enumerator for thread is at end
+2019-01-30T16:56:38.4779970+01:00:Thread#0:Scheduler: No more tests for thread
+2019-01-30T16:56:38.4799935+01:00:Trying to cancel thread
+2019-01-30T16:56:38.4799935+01:00:Thread cancelled
+2019-01-30T16:56:38.4990013+01:00:Thread#-1:Scheduler: get next test for thread -1
+2019-01-30T16:56:38.4990013+01:00:Thread#:Scheduler: at the end of normal test queue
+2019-01-30T16:56:38.4990013+01:00:Thread#-1:Scheduler: enumerator for thread is at end
+2019-01-30T16:56:38.5191766+01:00:2019-01-30T16:56:38.5191766+01:00;Thread#18;Info;test run finished
+2019-01-30T16:56:38.5191766+01:00:2019-01-30T16:56:38.5191766+01:00;Thread#18;Info;publishing test results
+2019-01-30T16:56:38.5451386+01:00:2019-01-30T16:56:38.5451386+01:00;Thread#18;Info;test results published
+2019-01-30T16:56:38.5451386+01:00:2019-01-30T16:56:38.5451386+01:00;Thread#18;Info;generating reports
+2019-01-30T16:56:38.5500943+01:00:2019-01-30T16:56:38.5500943+01:00;Thread#18;Info;creating 1 report(s)
+2019-01-30T16:56:38.5500943+01:00:2019-01-30T16:56:38.5500943+01:00;Thread#18;Info;generate Report ReportTemplate.cshtml
+2019-01-30T16:56:43.1615710+01:00:2019-01-30T16:56:43.1605727+01:00;Thread#18;Info;reports generated
+2019-01-30T16:56:43.1635661+01:00:Total: 0
+2019-01-30T16:56:43.1645626+01:00:Succeeded: 0
+2019-01-30T16:56:43.1645626+01:00:Ignored: 0
+2019-01-30T16:56:43.1645626+01:00:Pending: 0
+2019-01-30T16:56:43.1645626+01:00:Skipped: 0
+2019-01-30T16:56:43.1645626+01:00:Failed: 0
+2019-01-30T16:56:43.1655591+01:00:2019-01-30T16:56:43.1645626+01:00;VSTestExecutionThread;Info;Adding attachments to VSTest
+2019-01-30T16:56:43.1655591+01:00:2019-01-30T16:56:43.1655591+01:00;VSTestExecutionThread;Info;adding Test Execution Report 'C:\Users\imene\bank-account-front\BankAccountAPI\TestResults\BankAccount.Specs_BankAccount.Specs_2019-01-30T165623.html'
+2019-01-30T16:56:43.1695482+01:00:2019-01-30T16:56:43.1695482+01:00;VSTestExecutionThread;Info;Log file: file:///C:\Users\imene\bank-account-front\BankAccountAPI\TestResults\BankAccount.Specs_BankAccount.Specs_2019-01-30T165623.log
